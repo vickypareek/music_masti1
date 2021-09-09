@@ -31,5 +31,9 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/S780821/XMARTY_MUSIC)
 
-### ᴘʏʀᴏɢʀᴀᴍ ꜱᴇꜱꜱɪᴏɴ<\h5>
-  [![Session link](https://replit.com/@S780821/PyrogramSession)
+### ᴘʏʀᴏɢʀᴀᴍ ꜱᴇꜱꜱɪᴏɴ
+Use [Repl Link](https://replit.com/@S780821/PyrogramSession) to get pyrogram string session
+
+
+
+
