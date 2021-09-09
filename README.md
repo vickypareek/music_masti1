@@ -31,4 +31,5 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/S780821/XMARTY_MUSIC)
 
-[!Replit](https://replit.com/@S780821/PyrogramSession)
+### ᴘʏʀᴏɢʀᴀᴍ ꜱᴇꜱꜱɪᴏɴ<\h5>
+  [![Session link](https://replit.com/@S780821/PyrogramSession)
