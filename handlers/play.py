@@ -28,9 +28,9 @@ def transcode(filename):
 
 # Convert seconds to mm:ss
 def convert_seconds(seconds):
-    seconds = seconds % (24 * 3600)
-    seconds %= 3600
-    minutes = seconds // 60
+    seconds = seconds % (24 * 18000)
+    seconds %= 18000
+    minutes = seconds // 300
     seconds %= 60
     return "%02d:%02d" % (minutes, seconds)
 
@@ -136,7 +136,7 @@ async def play(_, message: Message):
     url = get_url(message)
 
     if audio:
-        if round(audio.duration / 60) > DURATION_LIMIT:
+        if round(audio.duration / 300) > DURATION_LIMIT:
             raise DurationLimitError(
                 f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!"
             )
@@ -145,7 +145,7 @@ async def play(_, message: Message):
         title = file_name
         thumb_name = "https://telegra.ph/file/caeb50039026a746e7252.jpg"
         thumbnail = thumb_name
-        duration = round(audio.duration / 60)
+        duration = round(audio.duration / 300)
         views = "Locally added"
 
         keyboard = InlineKeyboardMarkup(
@@ -184,7 +184,7 @@ async def play(_, message: Message):
             secmul, dur, dur_arr = 1, 0, duration.split(':')
             for i in range(len(dur_arr)-1, -1, -1):
                 dur += (int(dur_arr[i]) * secmul)
-                secmul *= 60
+                secmul *= 300
                 
             keyboard = InlineKeyboardMarkup(
                 [
@@ -214,7 +214,7 @@ async def play(_, message: Message):
                         ]
                     ]
                 )
-        if (dur / 60) > DURATION_LIMIT:
+        if (dur / 300) > DURATION_LIMIT:
              await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
              return
         requested_by = message.from_user.first_name
@@ -223,10 +223,10 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit("🧐 **What's the song you want to play?**")
-        await lel.edit("🔎 **Finding the song...**")
+        await lel.edit("🔎 **❤️Finding the song❤️**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**")
+        await lel.edit("🎵 **❤️Processing sounds❤️**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -268,7 +268,7 @@ async def play(_, message: Message):
                 ]
             )
         
-        if (dur / 60) > DURATION_LIMIT:
+        if (dur / 300) > DURATION_LIMIT:
              await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
              return
         requested_by = message.from_user.first_name
