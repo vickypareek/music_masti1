@@ -153,7 +153,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="Channel 🔊",
-                        url="https://t.me/Infinity_BOTs")
+                        url="https://t.me/Xmarty_support")
                    
                 ]
             ]
@@ -226,7 +226,7 @@ async def play(_, message: Message):
         await lel.edit("🔎 **❤️Finding the song❤️**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **❤️Processing sounds❤️**")
+        await lel.edit(" **❤️Processing sounds❤️**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -263,6 +263,9 @@ async def play(_, message: Message):
                         InlineKeyboardButton(
                             text="Download 📥",
                             url=f"{durl}")
+                        InlinekeyboardButton(
+                            text="Group ",
+                            url=f"{https://t.me/Xmarty_Support}")
 
                     ]
                 ]
