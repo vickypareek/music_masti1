@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply("🔄 **⚡Processing⚡**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -264,8 +264,8 @@ async def play(_, message: Message):
                             text="Download 📥",
                             url=f"{durl}")
                         InlinekeyboardButton(
-                            text="Group ",
-                            url=f"{https://t.me/Xmarty_Support}")
+                            text="Group",
+                            url="https://t.me/Xmarty_Support")
 
                     ]
                 ]
