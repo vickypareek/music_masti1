@@ -263,9 +263,6 @@ async def play(_, message: Message):
                         InlineKeyboardButton(
                             text="Download 📥",
                             url=f"{durl}")
-                        InlinekeyboardButton(
-                            text="Group",
-                            url="https://t.me/Xmarty_Support")
 
                     ]
                 ]
