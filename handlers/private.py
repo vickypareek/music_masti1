@@ -25,7 +25,7 @@ async def start(_, message: Message):
                         "💬 ɢʀᴏᴜᴘ", url="https://t.me/XMARTY_Support"
                     ),
                     InlineKeyboardButton(
-                        "🔊 ᴄʜᴀɴɴᴇʟ", url="https://t.me/XMARTY_SUPPORT"
+                        "✨𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄 2 ✨", url="https://github.com/S780821/XMARTY_MUSIC_2"
                     )
                 ],[ 
                     InlineKeyboardButton(
@@ -43,7 +43,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 ᴄʜᴀɴɴᴇʟ", url="https://t.me/XMARTY_SUPPORT")
+                        "⚡𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄⚡", url="https://github.com/S780821/XMARTY_MUSIC")
                 ]
             ]
         )
