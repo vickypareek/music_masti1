@@ -58,7 +58,7 @@ async def song(client, message):
         }
         song = True
     try:
-        await rkp.edit("Downloading...")
+        await rkp.edit("∂οωиℓοα∂ιиg...")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -73,13 +73,13 @@ async def song(client, message):
         )
         return
     except MaxDownloadsReached:
-        await rkp.edit("`Max-downloads limit has been reached.`")
+        await rkp.edit("`мαϰ-∂οωиℓοα∂ ℓιмιτ нαѕ ϐєєи яєαϲнє∂.`")
         return
     except PostProcessingError:
         await rkp.edit("`ᴛʜᴇʀᴇ ᴡᴀs ᴀɴ ᴇʀʀᴏʀ ᴅᴜʀɪɴɢ ᴘᴏsᴛ ᴘʀᴏᴄᴇssɪɴɢ.`")
         return
     except UnavailableVideoError:
-        await rkp.edit("`Media is not available in the requested format.`")
+        await rkp.edit("`мє∂ια ιѕ иοτ ανѕιℓѕϐℓє ιи τнє яєωυєѕτє∂ ƒοямατ.`")
         return
     except XAttrMetadataError as XAME:
         await rkp.edit(f"`{XAME.code}: {XAME.msg}\n{XAME.reason}`")
@@ -96,9 +96,9 @@ async def song(client, message):
         lol = "./etc/thumb.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
-                 duration=int(rip_data["duration"]),
+                 duration=int(rip_data["∂υяατιοи"]),
                  title=str(rip_data["title"]),
-                 performer=str(rip_data["uploader"]),
+                 performer=str(rip_data["υρℓοα∂єя"]),
                  thumb=lol,
                  caption=cap)  #xᴍᴀʀᴛʏʙᴏᴛs
         await rkp.delete()
