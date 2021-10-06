@@ -68,11 +68,11 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     img = Image.open("temp.png")
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype("etc/font.otf", 32)
-    draw.text((190, 550), f"Title: {title}", (255, 255, 255), font=font)
+    draw.text((190, 550), f"Title: {τιτℓє}", (255, 255, 255), font=font)
     draw.text(
-        (190, 590), f"Duration: {duration}", (255, 255, 255), font=font
+        (190, 590), f"Duration: {∂υяατιοи}", (255, 255, 255), font=font
     )
-    draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
+    draw.text((190, 630), f"Views: {νιєωѕ}", (255, 255, 255), font=font)
     draw.text((190, 670),
         f"Added By: {requested_by}",
         (255, 255, 255),
@@ -193,8 +193,8 @@ async def play(_, message: Message):
                             text="𝙔𝙤𝙪𝙩𝙪𝙗𝙚 🎬",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="𝙟𝙤𝙞𝙣 𝙛𝙤𝙧 𝙢𝙖𝙠𝙞𝙣𝙜 𝙤𝙧 𝙤𝙬𝙣 ",
-                            url=f"https://t.me/Xmartperson")
+                            text="𝙟𝙤𝙞𝙣 𝙛𝙤𝙧 𝙢𝙖𝙠𝙞𝙣𝙜 𝙪𝙧 𝙤𝙬𝙣 ",
+                            url=f"https://t.me/Xmarty_Support")
 
                     ]
                 ]
@@ -222,7 +222,7 @@ async def play(_, message: Message):
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🧐 **What's the song you want to play?**")
+            return await lel.edit("🧐 **𝙒𝙝𝙖𝙩'𝙨 𝙩𝙝𝙚 𝙨𝙤𝙣𝙜 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙥𝙡𝙨𝙮?**")
         await lel.edit("🔎 **❤️ƒเɳ∂เɳɠ ƭɦε รσɳɠ❤️**")
         query = message.text.split(None, 1)[1]
         # print(query)
@@ -279,7 +279,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 α∂∂є∂ ϐγ :** {}\n\n**#⃣ գυєυє∂ ροѕιτιοи:** {}".format(
+        caption="**🎵 Song:** {}\n**🕒 ᴅᴜʀᴀᴛɪᴏɴ:** {} min\n**👤 α∂∂є∂ ϐγ :** {}\n\n**#⃣ գυєυє∂ ροѕιτιοи:** {}".format(
         title, duration, message.from_user.mention(), ροѕιτιοи
         ),
         reply_markup=keyboard)
@@ -290,7 +290,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 α∂∂є∂ ϐγ:** {}\n\n**▶️ иοω ρℓαγιиg ατ `{}`...**".format(
+        caption="**🎵 Song:** {}\n**🕒 ᴅᴜʀᴀᴛɪᴏɴ:** {} min\n**👤 α∂∂є∂ ϐγ:** {}\n\n**▶️ иοω ρℓαγιиg ατ `{}`...**".format(
         title, duration, message.from_user.mention(), message.chat.title
         ), )
         os.remove("final.png")
