@@ -1,4 +1,4 @@
-# Infinity Bots (https://t.me/Infinity_Bots)
+
 
 import os
 import aiohttp
@@ -24,9 +24,9 @@ from youtube_dl.utils import (
 async def song(client, message):
     cap = "@JEBotZ"
     url = message.text.split(None, 1)[1]
-    rkp = await message.reply("Processing...")
+    rkp = await message.reply("ᴘʀᴏᴄᴇssɪɴɢ...")
     if not url:
-        await rkp.edit("**What's the song you want?**\nUsage`/song <song name>`")
+        await rkp.edit("**ᴡʜᴀᴛ's ᴛʜᴇ sᴏɴɢ ʏᴏᴜ ᴡᴀɴᴛ?**\nUsage`/song <song name>`")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
     test = search.result()
     p = json.loads(test)
@@ -34,7 +34,7 @@ async def song(client, message):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await rkp.edit("Failed to find that song.")
+        return await rkp.edit("ғᴀɪʟᴅ ᴛᴏ ғɪɴᴅ ᴛʜᴀᴛ sᴏɴɢ.")
     type = "audio"
     if type == "audio":
         opts = {
@@ -65,18 +65,18 @@ async def song(client, message):
         await rkp.edit(f"`{str(DE)}`")
         return
     except ContentTooShortError:
-        await rkp.edit("`The download content was too short.`")
+        await rkp.edit("`ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴄᴏɴᴛᴇɴᴛ ᴡᴀs ᴛᴏᴏ ᴀʜᴏʀᴛ.`")
         return
     except GeoRestrictedError:
         await rkp.edit(
-            "`Video is not available from your geographic location due to geographic restrictions imposed by a website.`"
+            "`ᴠɪᴅᴇᴏ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟʀ ғʀᴏᴍ ʏᴏᴜʀ ɢᴇᴏɢʀᴀᴘʜɪᴄ ʟᴏᴄᴀᴛɪᴏɴ ᴅᴜᴇ ᴛᴏ ɢᴇᴏɢʀᴀᴘʜɪᴄ ʀᴇsᴛʀɪᴄᴛɪᴏɴs ɪᴍᴘᴏsᴇᴅ ʙʏ ᴀ ᴡᴇʙsɪᴛᴇ.`"
         )
         return
     except MaxDownloadsReached:
         await rkp.edit("`Max-downloads limit has been reached.`")
         return
     except PostProcessingError:
-        await rkp.edit("`There was an error during post processing.`")
+        await rkp.edit("`ᴛʜᴇʀᴇ ᴡᴀs ᴀɴ ᴇʀʀᴏʀ ᴅᴜʀɪɴɢ ᴘᴏsᴛ ᴘʀᴏᴄᴇssɪɴɢ.`")
         return
     except UnavailableVideoError:
         await rkp.edit("`Media is not available in the requested format.`")
@@ -85,14 +85,14 @@ async def song(client, message):
         await rkp.edit(f"`{XAME.code}: {XAME.msg}\n{XAME.reason}`")
         return
     except ExtractorError:
-        await rkp.edit("`There was an error during info extraction.`")
+        await rkp.edit("`ᴛʜᴇʀᴇ ᴡᴀs ᴀɴ ᴇʀʀᴏʀ ᴅᴜʀɪɴɢ ɪɴғᴏ ᴇxᴛʀᴀᴄᴛɪᴏɴ.`")
         return
     except Exception as e:
         await rkp.edit(f"{str(type(e)): {str(e)}}")
         return
     time.time()
     if song:
-        await rkp.edit("Uploading...") #ImJanindu
+        await rkp.edit("ᴜᴘʟᴏᴀᴅɪɴɢ...") #xᴍᴀʀᴛʏsᴀʟɪᴍ
         lol = "./etc/thumb.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
@@ -100,5 +100,5 @@ async def song(client, message):
                  title=str(rip_data["title"]),
                  performer=str(rip_data["uploader"]),
                  thumb=lol,
-                 caption=cap)  #JEBotZ
+                 caption=cap)  #xᴍᴀʀᴛʏʙᴏᴛs
         await rkp.delete()
