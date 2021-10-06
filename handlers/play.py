@@ -194,7 +194,7 @@ async def play(_, message: Message):
                             url=f"{url}"),
                         InlineKeyboardButton(
                             text="𝙟𝙤𝙞𝙣 𝙛𝙤𝙧 𝙢𝙖𝙠𝙞𝙣𝙜 𝙤𝙧 𝙤𝙬𝙣 ",
-                            url=f"{@xmarty_support}")
+                            url=f"https://t.me/Xmartperson")
 
                     ]
                 ]
