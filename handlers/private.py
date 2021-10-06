@@ -9,7 +9,7 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
     await message.reply_text(
-        f"""**Hey, I'm {bn} 🎵
+        f"""**ʜᴇʏ, I'm {bn} 🎵
 
 ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ'ꜱ ᴠᴏɪᴄᴇ ᴄᴀʟʟ. ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ [xᴍᴀʀᴛʏ ꜱᴀʟɪᴍ](https://t.me/Xmartperson).
 
@@ -19,17 +19,17 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🛠", url="https://github.com/S780821/XMARTY_MUSIC")
+                        "🛠 𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙀 🛠", url="https://github.com/S780821/XMARTY_MUSIC")
                   ],[
                     InlineKeyboardButton(
-                        "💬 ɢʀᴏᴜᴘ", url="https://t.me/XMARTY_Support"
+                        "💬 𝙂𝙍𝙊𝙐𝙋", url="https://t.me/XMARTY_Support"
                     ),
                     InlineKeyboardButton(
-                        "✨𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄 2 ✨", url="https://github.com/S780821/XMARTY_MUSIC_2"
+                        "✨𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄 2✨", url="https://github.com/S780821/XMARTY_MUSIC_2"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ ʏʀʀ ᴍᴜᴊʜᴇ ɴᴀ ʟᴇ ᴊᴀᴏ ᴋʜᴜᴅ ᴋᴀ ʙɴᴀ ʟᴏ ➕", url="https://t.me/XMARTY_MUSIC_BOT?startgroup=true"
+                        "𝙈𝘼𝙆𝙀 𝙐𝙍 𝙊𝙒𝙉 𝙄𝙁 𝙐 𝙒𝘼𝙉𝙏 𝘼𝙉𝙔 𝙃𝙀𝙇𝙋 𝙋𝙇𝙀𝘼𝙎𝙀 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙈𝙔 𝘽𝙊𝙎𝙎 ", url="https://t.me/XMARTPERSON"
                     )]
             ]
         ),
