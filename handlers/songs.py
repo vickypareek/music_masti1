@@ -58,7 +58,7 @@ async def song(client, message):
         }
         song = True
     try:
-        await rkp.edit("∂οωиℓοα∂ιиg...")
+        await rkp.edit("downloading...")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -96,9 +96,9 @@ async def song(client, message):
         lol = "./etc/thumb.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
-                 duration=int(rip_data["∂υяατιοи"]),
+                 duration=int(rip_data["duration"]),
                  title=str(rip_data["title"]),
-                 performer=str(rip_data["υρℓοα∂єя"]),
+                 performer=str(rip_data["uploader"]),
                  thumb=lol,
                  caption=cap)  #xᴍᴀʀᴛʏʙᴏᴛs
         await rkp.delete()
