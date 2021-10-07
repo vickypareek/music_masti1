@@ -9,7 +9,7 @@ import time
 from youtubesearchpython import SearchVideos
 from pyrogram import filters, Client
 from yt_dlp import YoutubeDL
-from youtube_dl.utils import (
+from yt_dlp.utils import (
     ContentTooShortError,
     DownloadError,
     ExtractorError,
@@ -22,7 +22,7 @@ from youtube_dl.utils import (
 
 @Client.on_message(filters.command("song") & ~filters.edited)
 async def song(client, message):
-    cap = "@JEBotZ"
+    cap = "@Xmarty_Support"
     url = message.text.split(None, 1)[1]
     rkp = await message.reply("ᴘʀᴏᴄᴇssɪɴɢ...")
     if not url:
