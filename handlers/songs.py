@@ -96,9 +96,9 @@ async def song(client, message):
         lol = "./etc/thumb.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
-                 duration=int(rip_data["∂υяατιοи"]),
+                 duration=int(rip_data["υρℓοα∂єя"]),
                  title=str(rip_data["title"]),
-                 performer=str(rip_data["µρℓσα∂εɾ]),
+                 performer=str(rip_data["µρℓσα∂εɾ"]),
                  thumb=lol,
                  caption=cap)  #xᴍᴀʀᴛʏʙᴏᴛs
         await rkp.delete()
