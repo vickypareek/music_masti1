@@ -22,7 +22,7 @@ from yt_dlp.utils import (
 
 @Client.on_message(filters.command("song") & ~filters.edited)
 async def song(client, message):
-    cap = "@Xmarty_Support"
+    cap = "υρℓοα∂є∂ ϐγ @Xmarty_Support"
     url = message.text.split(None, 1)[1]
     rkp = await message.reply("ᴘʀᴏᴄᴇssɪɴɢ...")
     if not url:
@@ -96,9 +96,9 @@ async def song(client, message):
         lol = "./etc/thumb.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
-                 duration=int(rip_data["duration"]),
+                 duration=int(rip_data["∂υяατιοи"]),
                  title=str(rip_data["title"]),
-                 performer=str(rip_data["uploader"]),
+                 performer=str(rip_data["µρℓσα∂εɾ]),
                  thumb=lol,
                  caption=cap)  #xᴍᴀʀᴛʏʙᴏᴛs
         await rkp.delete()
