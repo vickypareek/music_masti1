@@ -37,6 +37,7 @@
 ### ᴘʏʀᴏɢʀᴀᴍ ꜱᴇꜱꜱɪᴏɴ
 Use [Repl Link](https://replit.com/@S780821/PyrogramSession) to get pyrogram string session
 
-
+# CREDITS
+- [Xmarty Salim](https://github.com/S780821) for Creating Repo
 
 # .•♫•♬• ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ xᴍᴀʀᴛɪᴇs ʀᴇᴘᴏ •♫•♬•
