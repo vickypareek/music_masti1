@@ -35,7 +35,7 @@
 [![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/vickypareek/music_masti1&envs=API_ID,API_HASH,BOT_TOKEN,SESSION_NAME,SUDO_USERS)
 
 ### ᴘʏʀᴏɢʀᴀᴍ ꜱᴇꜱꜱɪᴏɴ
-Use [Repl Link](https://replit.com/@S780821/PyrogramSession) to get pyrogram string session
+Use [Repl Link](https://replit.com/@vickypareek/PyrogramSession) to get pyrogram string session
 
 # CREDITS
 - [music_masti1 B_O_L_L_E_N_A_T_H_A](https://github.com/S780821) for Creating Repo
